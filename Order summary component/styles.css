@@ -1,0 +1,114 @@
+body {
+    background-color: antiquewhite;
+    font-family: Roboto;
+    background-image: url(assets/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color:rgb(230, 235, 252) ;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+h1 {
+    margin-bottom: 0.8rem;
+    color: rgb(27,31,66);
+}
+.illustration {
+    width: 25rem;
+}
+
+.order-summary-container {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.info-part {
+    padding: 0.4rem 1.6rem;
+}
+.top-info {
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+.top-info-text {
+    color: rgb(144,144,144);
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+}
+.middle-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 3rem;
+    background-color:rgb(246,247,254);
+    padding: 0.8rem 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.music-icon {
+    height: 2.5rem;
+    margin-right: 1.2rem;
+    margin-left: 0.5rem;
+}
+.price-info {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(27,31,66);
+}
+.plan-price {
+    display: flex;
+    align-items: center;
+    line-height: 1.2rem;
+}
+.price {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(136, 137, 154);
+}
+.button-change {
+    font-size: 1rem;
+    text-decoration: none;
+    color:rgb(66,59,168);
+    margin-right: 0.8rem;
+}
+.button-change:hover {
+    color:rgb(104, 88, 220);
+}
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.6rem;
+}
+.payment-button {
+    background-color:rgb(41,0,217);
+    width: 21rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(41,0,217,0.3);
+    cursor: pointer;
+}
+.payment-button:hover {
+    background-color:rgb(104, 88, 220);
+}
+.cancel-button {
+    border: none;
+    background-color: white;
+    color: rgb(94,101,139);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.cancel-button:hover {
+    color:rgb(104, 88, 220);
+}
