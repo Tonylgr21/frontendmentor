@@ -1,0 +1,136 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url(assets/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(93, 64, 160);
+    padding: 0rem 4rem;
+}
+
+/* Header part design */
+
+.header {
+    margin: 2rem;
+}
+.logo {
+    height: 52px;
+}
+
+/* Middle part design */
+/* Overall */
+
+.main-part-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left section of middle part*/
+
+.left-part {
+    max-width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-left {
+    max-width: 100%;
+    max-height: 100%;
+    flex: 2;
+}
+
+/* Right section of middle part*/
+
+.right-part {
+    padding: 1.5rem 3rem;
+    max-width: 100%;
+    max-height: 100%;
+    flex: 1;
+}
+h1 {
+    font-family: Poppins;
+    max-width: 24rem;
+    color: white;
+    line-height: 3rem;
+}
+p {
+    font-family: Open Sans;
+    color: white;
+    line-height: 1.6rem;
+}
+
+/* Button design at the right part */
+
+.register-button {
+    font-family: Poppins;
+    border: none;
+    border-radius: 40px;
+    padding: 1rem 4rem;
+    background-color: white;
+    color: rgb(93, 64, 160);
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+    transition: all 0.25s;
+}
+.register-button:hover {
+    opacity: 0.9;
+}
+.register-button:active {
+    background-color: rgb(255,45,182);
+    color: white;
+
+}
+
+/* Footer part design */
+
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+.bottom img{
+    margin-left: 2rem;
+}
+
+
+/* Media query*/
+
+@media (max-width:1000px) {
+    .header {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(assets/images/bg-mobile.svg);
+        background-size: cover;
+        padding: 2rem 2rem;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-part-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .register-button {
+        margin: 2rem;
+    }
+    .bottom {
+        justify-content: space-evenly;
+        margin: 4rem;
+        width: 70%;
+        
+    }
+}
