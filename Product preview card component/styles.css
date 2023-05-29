@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(239,228,221);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.image {
+    height: 30rem;
+    transition: all 0.25s;
+}
+.image:hover {
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.main-container {
+  
+    background-color: white;
+    border-radius: 14px;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.right-part {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+}
+.head {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(120, 120, 120);
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+.head-name {
+    font-family: Fraunces;
+    font-size: 2.2rem;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+.main-text {
+    font-family: Montserrat;
+    color: rgb(120, 120, 120);
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    width: 90%;
+    margin-bottom: 1rem;
+
+}
+.price {
+    font-family: Fraunces;
+    color: rgb(0, 128, 73);
+    font-size: 1.8rem;
+    margin-top: 0rem;
+}
+.old-price {
+    font-family: Montserrat;
+    text-decoration: line-through;
+    color: rgb(120, 120, 120);
+    font-size: 0.8rem;
+}
+.shopping-image {
+    height: 1rem;
+    position: absolute;
+    left: 2.85rem;
+    top: 0.65rem;
+}
+.button-container {
+    position: relative;
+    margin-left: 1.6rem;
+}
+.shopping-button {
+    height: 2.4rem;
+    width: 14rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(80, 152, 121);
+    font-family: Montserrat;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.8rem 4rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.shopping-button:hover {
+    background-color:rgb(97, 184, 147) ;
+}
+.shopping-button:active {
+    background-color:rgb(58, 111, 88)
+}
+@media (max-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        height: 60rem;
+    }
+    .left-part {
+        display: flex;
+        justify-content: center;
+        padding:2rem 4rem;
+    }
+    .button-container {
+        margin-left: 7rem;
+    }
+ 
+    
+
+    
+}
+
+
+
+
