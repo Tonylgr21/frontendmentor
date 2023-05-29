@@ -1,0 +1,118 @@
+body {
+    min-height: 100vh;
+    font-family: Poppins;
+    padding: 2rem 4rem;
+    display: grid;
+    align-items: center;
+}
+.template {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    max-width: 80rem;
+}
+
+   
+.top-yellow {
+    grid-column: 2;
+}
+.top-blue {
+    transform:translateY(55%);
+}
+.top-dark-blue {
+    grid-column: 3;
+    transform: translateY(-55%);
+}
+/* Design and layout for Header */
+
+header {
+    line-height: 1.2rem;
+    margin: 2rem auto;
+    max-width: 30rem;
+    text-align: center;
+}
+.sup-header {
+    color: rgb(64,66,83);
+    font-size: 2rem;
+    font-weight: 200;
+}
+h1 {
+    color: rgb(64,66,83);
+}
+.sub-header {
+    color: rgb(167,167,171);
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+/* Section with blocks */
+
+.image-section {
+    height: 75px;
+    align-self: flex-end;
+    
+}
+.section {
+    display: flex;
+    flex-direction: column;
+   
+    box-shadow: 0px 10px 30px 3px rgba(0,0,0,0.165) ;
+    border-radius: 12px;
+    padding: 1rem 2.2rem 2.6rem 2.2rem;
+}
+
+.top-blue {
+    border-top: 5px solid rgb(58,204,200);
+}
+.top-red {
+    border-top: 5px solid rgb(230,57,66)
+}
+.top-yellow {
+    border-top: 5px solid rgb(251,158,56)
+}
+.top-dark-blue {
+    border-top: 5px solid rgb(66,137,238)
+}
+.section h2 {
+    color: rgb(64,66,83);
+}
+.section p {
+    font-size: 0.8rem;
+    color: rgb(167,167,171);
+    max-width: 80%;
+    margin-bottom: 1.8rem;
+    line-height: 1.6rem;
+}
+@media (max-width: 1100px) {
+    .template {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .top-yellow {
+        grid-column: 1;
+    }
+    .top-blue {
+        transform:translateY(0%);
+    }
+    .top-dark-blue {
+        grid-column: 2;
+        transform: translateY(0%);
+    }
+}
+@media (max-width: 650px) {
+    body {
+        padding: 2rem 2rem;
+    }
+    .template {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section {
+        margin: 1rem 2rem;
+        max-width: 100%;
+    }
+    
+}
