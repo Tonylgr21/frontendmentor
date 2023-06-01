@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+}
+/* Card and links design */
+.card-wrapper {
+    width: 21rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+a:active {
+    color: hsl(178, 100%, 50%);
+}
+/* Top part */
+
+.top-part {
+    position: relative;
+}
+.top-image {
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 0.5em;
+    width: 100%;
+    overflow: hidden;
+  
+}
+
+/* NFT image with transparent hovering effect */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 96%;
+    border-radius: 1rem;
+    background-color: hsla(178, 100%, 50%, 45%);
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#img-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Middle part */
+
+h2 {
+    font-size: 1.3rem;
+}
+.article-top p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+.article-bottom, .left, .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-bottom img {
+    margin-right: 0.4rem;
+}
+.left p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.right p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+/* Bottom part */
+
+.bottom-part {
+    display: flex;
+    align-items: center;
+}
+.bottom-part img {
+    height: 1.8rem;
+    border: 0.1rem solid white;
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+.bottom-part p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 200;
+}
+
+
